@@ -47,7 +47,7 @@ namespace Pure_Poker
                 List<string> paths = new List<string>();
                 foreach (string card in cards)
                 {
-                    paths.Add($"F:\\Visual Studio 2019\\cards\\{card}.png");
+                    paths.Add($"D:\\Alex\\Programming Projects\\PurePoker\\cards\\{card}.png");
                 }
                 return paths;
             }
@@ -524,7 +524,7 @@ namespace Pure_Poker
         {
             Round.bigBlindPosition++;
 
-            string cardBack = "F:\\Visual Studio 2019\\cards\\back.png";
+            string cardBack = $"D:\\Alex\\Programming Projects\\PurePoker\\cards\\back.png";
 
             cCard1PicBox.Image = Image.FromFile(cardBack);
             cCard2PicBox.Image = Image.FromFile(cardBack);
@@ -1029,12 +1029,6 @@ namespace Pure_Poker
         private void player2RaiseBox_ValueChanged(object sender, EventArgs e)
         {
             player2RaiseBox.Maximum = Player2.chips;
-        }
-        private void testButton_Click(object sender, EventArgs e)
-        {
-            List<string> playerhand = new List<string>() { "05_diamond", "07_club", "04_diamond", "06_diamond", "07_diamond", "8_diamond", "07_spade" };
-
-            testBox.Text = playerhand[1].Substring(3, 1);
         }
         private void startFirstRoundButton_Click(object sender, EventArgs e)
         {

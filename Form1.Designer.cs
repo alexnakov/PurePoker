@@ -53,10 +53,8 @@
             this.player2Label = new System.Windows.Forms.Label();
             this.potLabel = new System.Windows.Forms.Label();
             this.startFirstRoundButton = new System.Windows.Forms.Button();
-            this.testBox = new System.Windows.Forms.TextBox();
             this.player2RaiseBox = new System.Windows.Forms.NumericUpDown();
             this.player1RaiseBox = new System.Windows.Forms.NumericUpDown();
-            this.testButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.player1Card1PicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player1Card2PicBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player2Card2PicBox)).BeginInit();
@@ -313,15 +311,6 @@
             this.startFirstRoundButton.UseVisualStyleBackColor = true;
             this.startFirstRoundButton.Click += new System.EventHandler(this.startFirstRoundButton_Click);
             // 
-            // testBox
-            // 
-            this.testBox.Location = new System.Drawing.Point(12, 146);
-            this.testBox.Multiline = true;
-            this.testBox.Name = "testBox";
-            this.testBox.Size = new System.Drawing.Size(294, 170);
-            this.testBox.TabIndex = 29;
-            this.testBox.Text = "testbox";
-            // 
             // player2RaiseBox
             // 
             this.player2RaiseBox.Increment = new decimal(new int[] {
@@ -368,25 +357,13 @@
             0});
             this.player1RaiseBox.ValueChanged += new System.EventHandler(this.player1RaiseBox_ValueChanged);
             // 
-            // testButton
-            // 
-            this.testButton.Location = new System.Drawing.Point(11, 117);
-            this.testButton.Name = "testButton";
-            this.testButton.Size = new System.Drawing.Size(110, 23);
-            this.testButton.TabIndex = 34;
-            this.testButton.Text = "test whatever";
-            this.testButton.UseVisualStyleBackColor = true;
-            this.testButton.Click += new System.EventHandler(this.testButton_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1169, 543);
-            this.Controls.Add(this.testButton);
             this.Controls.Add(this.player1RaiseBox);
             this.Controls.Add(this.player2RaiseBox);
-            this.Controls.Add(this.testBox);
             this.Controls.Add(this.startFirstRoundButton);
             this.Controls.Add(this.potLabel);
             this.Controls.Add(this.player2Label);
@@ -456,10 +433,8 @@
         private System.Windows.Forms.Label player2Label;
         private System.Windows.Forms.Label potLabel;
         private System.Windows.Forms.Button startFirstRoundButton;
-        private System.Windows.Forms.TextBox testBox;
         private System.Windows.Forms.NumericUpDown player2RaiseBox;
         private System.Windows.Forms.NumericUpDown player1RaiseBox;
-        private System.Windows.Forms.Button testButton;
     }
 }
 
